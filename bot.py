@@ -10,7 +10,7 @@ wikipedia.set_lang("ru")
 def getwiki(s):
     try:
         ny = wikipedia.page(s)
-        # Получаем первую тысячу символов
+        # Получаем первую тысячу символов.
         wikitext=ny.content[:1000]
         # Разделяем по точкам
         wikimas=wikitext.split('.')
